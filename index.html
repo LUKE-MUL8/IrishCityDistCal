@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Distance calculator in Ireland</title>
+	<link rel="stylesheet" href="css/w3.css">
+	<script type="text/javascript" src="jScripts/myScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="w3-row w3-green w3-center">
+		<h1><b>Irish City Distance Calculator</b></h1>
+		<h1>In a straight line <i class="fa fa-map"></i></h1>
+	</header>
+	<div class="w3-half w3-center w3-container w3-gray">
+		<h2>Location 1</h2>
+		<div class="w3-dropdown-click">
+			<button class="w3-button w3-black w3-round-xlarge" onclick="dropFunction()">Dropdown</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card w3-light-grey" id="myDIV">
+				<input class="w3-input w3-padding" type="text" placeholder="Search.." id="location1"
+					onkeyup="filterFunction()">
+				<a class="w3-bar-item w3-button" id="#Athlone1">Athlone</a>
+				<a class="w3-bar-item w3-button" id="#Belfast1">Belfast</a>
+				<a class="w3-bar-item w3-button" id="#Cork1">Cork</a>
+				<a class="w3-bar-item w3-button" id="#Derry1">Derry</a>
+				<a class="w3-bar-item w3-button" id="#Dublin1">Dublin</a>
+				<a class="w3-bar-item w3-button" id="#Galway1">Galway</a>
+				<a class="w3-bar-item w3-button" id="#Limerick1">Limerick</a>
+				<a class="w3-bar-item w3-button" id="#Sligo1">Sligo</a>
+				<a class="w3-bar-item w3-button" id="#Waterford1">Waterford</a>
+
+			</div>
+		</div>
+	</div>
+	<div class="w3-half w3-center w3-container w3-blue-grey">
+		<h2>Location 2</h2>
+		<div class="w3-dropdown-click">
+			<button class="w3-button w3-black w3-round-xlarge" onclick="dropFunction2()">Dropdown</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card w3-light-grey" id="myDIV2">
+				<input class="w3-input w3-padding" type="text" placeholder="Search.." id="location2"
+					onkeyup="filterFunction2()">
+				<a class="w3-bar-item w3-button" id="#Athlone2">Athlone</a>
+				<a class="w3-bar-item w3-button" id="#Belfast2">Belfast</a>
+				<a class="w3-bar-item w3-button" id="#Cork2">Cork</a>
+				<a class="w3-bar-item w3-button" id="#Derry2">Derry</a>
+				<a class="w3-bar-item w3-button" id="#Dublin2">Dublin</a>
+				<a class="w3-bar-item w3-button" id="#Galway2">Galway</a>
+				<a class="w3-bar-item w3-button" id="#Limerick2">Limerick</a>
+				<a class="w3-bar-item w3-button" id="#Sligo2">Sligo</a>
+				<a class="w3-bar-item w3-button" id="#Waterford2">Waterford</a>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<!--html data-->
+
+
+	<table class="w3-table w3-bordered w3-half w3-centered">
+		<tr>
+			<th>From</th>
+		</tr>
+		<tr>
+			<td id="Location1text"></td>
+		</tr>
+	</table>
+	<table class="w3-table w3-bordered w3-half w3-centered">
+		<tr>
+			<th>To</th>
+		</tr>
+		<tr>
+			<td id="Location2text"></td>
+		</tr>
+	</table>
+
+
+	<div class="w3-container w3-center w3-panel">
+		<img class="w3-center w3-centered" src="images/irelandblack-removebg-preview (1).png" alt="">
+	</div>
+
+	<table class="w3-table w3-bordered w3-centered">
+		<tr>
+			<th id="distanceShow" class="w3-jumbo"></th>
+		</tr>
+	</table>
+
+
+	<div class="w3-container w3-center w3-panel">
+		<div class="w3-centered">
+			<button id="distBtn" class="w3-btn w3-ripple w3-green w3-centered w3-center w3-round-xlarge">
+				<h1>Get Distance</h1>
+			</button>
+		</div>
+	</div>
+
+	<div class="w3-container w3-center w3-panel w3-padding-large">
+		<div class="w3-centered">
+			<button id="resetBtn" class="w3-btn w3-ripple w3-blue w3-centered w3-center w3-round-xlarge w3-wide">
+				<h3><b>Reset</b></h3>
+			</button>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
